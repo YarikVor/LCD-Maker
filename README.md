@@ -1,6 +1,8 @@
 # LCD-Maker
 
 Example:
+
+```cpp
 const byte symbol[] = { // o
     0b00000,
     0b00000,
@@ -20,5 +22,6 @@ void setup(){
     //And write "byte" type
     lcd.write(byte(0));
 }
+```
 
 void loop(){}
