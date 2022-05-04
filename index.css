@@ -1,0 +1,24 @@
+body{
+    
+margin: 8px;}
+
+.tiny {width: 20px;height: 20px;border: 1px solid #4a0000;margin: 0 0 -1px -1px;background-color: white;}
+
+
+
+.big {display: flex;width: calc(21px * 5);flex-wrap: wrap;/* justify-content: center; *//* align-content: center; */margin: 0 auto;}
+
+dir#base {width: calc(21px * 5 + 100px);margin: 20px auto;}
+
+button.cnvBtt {/* margin: 0 20px; */display: block;}
+
+textarea.txtArea {width: 100%;display: block;
+  
+  
+  
+  min-height: 179px;
+  height: max-content;white-space: pre-wrap;}
+
+.base > button {margin: 0 20px;/* float: right; */}
+
+.base {display: flex;margin: 20px 0;justify-content: center;}
