@@ -2,7 +2,9 @@ var baseBlock = document.createElement("div");
 baseBlock.classList.add("big");
 document.body.appendChild(baseBlock);
 
-for(let i = 0; i < 5 * 8; i++){
+const Width = 5, Heigth = 7;
+
+for(let i = 0; i < Width * Heigth; i++){
     let temp = document.createElement("div");
     temp.classList.add("tiny");
     temp.value = true;
@@ -45,9 +47,9 @@ document.body.appendChild(textAreaBlock);
 convertButton.addEventListener("click", ()=>{
     let str = "{\n";
     let num = 0;
-    for(let i = 0; i < 8; i++){
+    for(let i = 0; i < Heigth; i++){
         num = 0
-        for(let j = 0; j < 5; j++){
+        for(let j = 0; j < Width; j++){
             num <<= 1;
             num += baseBlock.getElementsByClassName("tiny")[i * 5 + j].value ? 0 : 1;
         }
@@ -59,7 +61,7 @@ convertButton.addEventListener("click", ()=>{
 });
 
 clearButton.addEventListener("click", ()=>{
-    for(let i = 0; i < 5 * 8; i++){
+    for(let i = 0; i < Width * Heigth; i++){
         let temp = baseBlock.getElementsByClassName("tiny")[i];
         temp.value = true;
         temp.style.backgroundColor = "#fff";
