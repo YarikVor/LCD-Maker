@@ -22,6 +22,6 @@ void setup(){
     //And write "byte" type
     lcd.write(byte(0));
 }
-```
 
 void loop(){}
+```
